@@ -36,8 +36,9 @@
 %matlabでのグラフ出力については別で
 \usepackage{siunitx} %単位や数値が綺麗に入ります
 %\usepackage{times} % これもう古いのでtxfonts使おね
-\usepackage{txfonts} %綺麗なtimesフォント系への切り替え
-\usepackage{amssymb}
+%\usepackage{txfonts} % txfontsはLuaLaTeXのTUエンコーディング非対応のため使用不可
+\usepackage{newtxtext} % txfontsの後継，LuaLaTeX対応
+\usepackage{newtxmath} % txfontsの後継，LuaLaTeX対応（数式フォント，AMSシンボルを内包するためamssymbは不要）
 \numberwithin{equation}{section}%式がたくさん出る人はこちらをどうぞ，3章の5式目とかがeq.(3.5)とかになります
 
 
@@ -213,7 +214,7 @@ Table~\ref{table:test}はぶち抜き表の例だよ．
         Type   & Name & Voltage \\ \hline \hline
         Exp. A & 46\% & 33\%    \\
         Exp. B & 64\% & 9\%     \\ \hline
-    \end{tabular}
+    n\end{tabular}
 \end{table}
 
 表はいろんな流儀がありますが，私の最近の流儀は
