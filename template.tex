@@ -142,7 +142,7 @@ setpagesize=false,
 
 図の引用の例はFig.~\ref{fig:test}のようにしましょう．
 図の引用の例としてこちらの方法もあります\reffig{test}．
-しかし後者の方法は，osukalab2020.styが必要です．より一般的な書き方は前者なので，前者を使うのが良いでしょう．
+しかし後者の方法は，sugimotolab.styが必要です．より一般的な書き方は前者なので，前者を使うのが良いでしょう．
 
 
 流派にもよるとは思いますが，figure環境の配置オプションはtb!ぐらいがいいと思います．
@@ -214,7 +214,7 @@ Table~\ref{tab:test}はぶち抜き表の例だよ．
         Type   & Name & Voltage \\ \hline \hline
         Exp. A & 46\% & 33\%    \\
         Exp. B & 64\% & 9\%     \\ \hline
-    n\end{tabular}
+        n\end{tabular}
 \end{table}
 
 表はいろんな流儀がありますが，私の最近の流儀は
@@ -326,9 +326,9 @@ bibtex\_template.bibってファイルがあるので，その中をみて，必
 % 以下に文献を書きます。
 %
 {\small
-\bibliographystyle{osukalab}
+\bibliographystyle{sugimotolab}
 \bibliography{myref}%bibtex_template.bibに自分の文献情報を書き込んで，ここのmyrefをbibtex_templateに書き換えよう
-
+}
 
 \clearpage
 
